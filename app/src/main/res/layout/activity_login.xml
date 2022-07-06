@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/macambuah"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imglogo"
+        android:padding="40dp"
+        android:background="#E91E63"
+        >
+
+        <EditText
+            android:id="@+id/textPUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:hint="User Name"
+            android:textSize="18sp"
+            android:textColorHint="@color/black"
+            />
+        <EditText
+            android:id="@+id/textPPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
